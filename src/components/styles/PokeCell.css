@@ -1,10 +1,56 @@
 .poke-cell {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    background-color: #FFF;
+    /*width: 120px;
+    height: 120px;*/
+    width: 7vw;
+    height: 7vw;
+    margin: .5vw;
+    background-color:rgba(135, 206, 250, 1);
     background-repeat: no-repeat;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .20);
+    /* border-radius: 10px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .20); */
+    border-radius: 1vw;
+    box-shadow: 0 .5vw .5vw 0 rgba(0, 0, 0, .20);
   }
+
+.poke-cell > img {
+  width: 7vw;
+  height: 7vw;
+  margin: 0 0 0 -.25vw;
+  padding: 0 0 0 0;
+}
+
+.poke-cell:hover {
+  /*width: 130px;
+  height: 130px;*/
+  width: 7.5vw;
+  height: 7.5vw;
+  margin: 0 0.25vw 0 0.25vw;
+  background-color: rgba(193, 231, 255, 1);
+}
+
+.poke-cell-image {
+  width: 115px;
+  height: 115px;
+}
+
+@media (max-width: 700px) {
+  .poke-cell {
+    width: 11vw;
+    height: 11vw;
+    margin: .5vw;
+  }
+
+  .poke-cell:hover {
+    width: 11.5vw;
+    height: 11.5vw;
+    margin: 0 .25vw 0 .25vw;
+  }
+
+  .poke-cell > img {
+    width: 11vw;
+    height: 11vw;
+    margin: -.5vw 0 0 -1.5vw;
+    padding: 0 0 0 0;
+  }
+}

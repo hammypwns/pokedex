@@ -16,3 +16,9 @@
 .poke-list::-webkit-scrollbar {
   display: none;
 }
+
+@media (max-width: 700px) {
+  .poke-list {
+    margin: 2.5vh 3vh 2.5vh 3vh;
+  }
+}

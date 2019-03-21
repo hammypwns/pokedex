@@ -11,6 +11,7 @@
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .20); */
     border-radius: 1vw;
     box-shadow: 0 .5vw .5vw 0 rgba(0, 0, 0, .20);
+    cursor: pointer;
   }
 
 .poke-cell > img {

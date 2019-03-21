@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <>
       <div className = "Header">
-        React Pokédex
+        React Pokédex (No Apple Bois Allowed)
       </div>
 
       <div className="App">

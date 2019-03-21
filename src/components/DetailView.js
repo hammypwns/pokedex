@@ -22,17 +22,25 @@ const DetailView = ({ pokemon }) => {
   else {
     return (
       <section className="detail-view">
+
         <img src={sprite} className='sprite-image' alt="sprite"/>
+
+        {/* <p className='btns'>
+          <button className='shiny-btn' onClick={() => this.handleSpriteChange(id)}>Default</button>
+          <button className='shiny-btn' onClick={() => this.handleSpriteChange(id)}>Shiny</button>
+        </p> */}
+
         <div className='data-wrapper'>
-          <p className ='data-name'>Name: {name}</p><br />
-          <p className ='data-info'>Pokédex #: {id}</p><br />
-          <p className='data-info'>Region: {region}</p><br />
-          <p className='data-info'>Type: {type}</p><br />
+          <p className ='data-name'>Name: {name}</p>
+          <p className ='data-info'>Pokédex #: {id}</p>
+          <p className='data-info'>Region: {region}</p>
+          <p className='data-info'>Type: {type}</p>
           {/* <p className='data-info'>Default Move: {moves}</p><br /> */}
-          <p className='data-info'>Abilities: {abilities}</p><br />
-          <p className='data-info'>Height: {height}' {height2}"</p><br />
-          <p className='data-info'>Weight: {weight}lbs</p><br />
+          <p className='data-info'>Abilities: {abilities}</p>
+          <p className='data-info'>Height: {height}' {height2}"</p>
+          <p className='data-info'>Weight: {weight}lbs</p>
         </div>
+
       </section>
     )
   }

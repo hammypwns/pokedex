@@ -1,9 +1,19 @@
+@font-face {
+  font-family: pokemon;
+  src: url(../../assets/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+  font-family: pokemon2;
+  src: url(../../assets/Pokemon\ Hollow.ttf);
+}
+
 .App {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 96vw;
-  height: 94vh;
+  height: 93vh;
   margin: 1vh 2vw 1vh 2vw;
   background-color: #FE0065;
   border-radius: 2vw;
@@ -24,15 +34,20 @@ body {
   width: 100vw;
   margin-top: 1vh;
   margin-bottom: 0;
+  padding: 0 0 0 0;
+  line-height: 2.4vh;
+  letter-spacing: .5vh;
+  font-family: pokemon;
 }
 
 .generations {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  align-content: center;
   height: 94bh;
   width: 5vw;
+  align-self: center;
 }
 
 .generations > button {
@@ -65,6 +80,8 @@ body {
   font-weight: bolder;
   margin: 0 0 0 2.5vh;
   padding: 0 0 0 0;
+  font-family: pokemon2;
+  letter-spacing: .5vh;
 }
 
 @media (max-width: 700px) {
@@ -83,5 +100,15 @@ body {
     border-radius: 0px;
     border-width: 0px;
   }
+
+  .genHeader {
+    margin-left: 3vh;
+    letter-spacing: .3vh;
+  }
+  /* .Header {
+    padding-top: 1vh;
+    line-height: 1vh;
+    font-size: 1.5vh;
+  } */
 
 }

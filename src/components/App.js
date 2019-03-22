@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   handleOnClick(id) {
-      axios.get(`http://pokeapi.co/api/v2/pokemon/${id}/`)
+      axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         .then(res => {
           const pokemon = new Pokemon(res.data);
 
@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <>
       <div className = "Header">
-        React Pokédex (No Apple Bois Allowed)
+        React Pokédex
       </div>
 
       <div className="App">

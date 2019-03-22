@@ -1,6 +1,6 @@
 .detail-view {
     width: 50%;
-    height: calc(96vh - 75px);
+    height: 90vh;
     height: 100%;
     padding: 1vw;
     background-color: #df095e;
@@ -54,11 +54,13 @@
 
   .data-info {
     font-size: 1em;
+    margin: 1vh 0 0 0;
   }
 
   @media (max-width: 700px) {
     .detail-view {
       width: 40%;
+      height: 90vh;
     }
 
     .data-wrapper {

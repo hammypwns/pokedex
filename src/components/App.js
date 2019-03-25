@@ -19,6 +19,7 @@ class App extends Component {
       pokemon: {},
       generation: 1,
       update: false,
+      loading: false,
     };
 
     this.handleOnClick = this.handleOnClick.bind(this);
@@ -35,7 +36,7 @@ class App extends Component {
   }
 
   handleGenChange(gen) {
-    this.setState({ generation: gen, update: true })
+    this.setState({ generation: gen, update: true})
     console.log(this.state);
   }
 

@@ -3,12 +3,33 @@ import PokeCell from './PokeCell';
 import axios from 'axios';
 import { generations } from '../generations';
 import './styles/PokeList.css';
+import pokeball from '../assets/pokeball.gif';
+
+let loadingName;
+const loadingNames = ["Loading...", "Gotta Load 'em All", "Becoming the Very Best...",
+    "Connecting to PokéDatabase...", "Scanning Pokéballs...", "Consulting with Professor Oak...",
+    "Making Poffins...", "Teaching Pikachu to Surf...", "Fixing Misty's Bike...",
+    "Pulling Brock away from Nurse Joy...", "Ruining Team Rocket's Plans",
+    "Light-years isn't time... It measures distance!", "Challenging Elite Four...",
+    "Selling Nuggets...", "Stocking Up on Rare Candies", "Flying on Pidgey (But Not Charizard)"]
+
+
+const LoadingComponent = () => {
+  loadingName = loadingNames[Math.floor(Math.random()*loadingNames.length)];
+  return (
+    <section className='loading'>
+      <img src = {pokeball} className='pokeballGif' alt="Pokeball gif"></img> <br/>
+      {loadingName}
+    </section>
+  )
+}
 
 class PokeList extends Component {
   constructor(props) {
     super(props);
     this.state = {
       cells: [],
+      loading: false,
     };
   }
 
@@ -16,6 +37,7 @@ class PokeList extends Component {
     let cells = [];
     const start = generations[this.props.generation].begin;
     const end = generations[this.props.generation].end;
+    this.setState({ loading: true });
     console.log(`loading cells for gen ${this.props.generation}`);
     for (let i = start; i <= end; i++) {
       try {
@@ -37,6 +59,7 @@ class PokeList extends Component {
     };
 
     console.log(`done loading cells for gen ${this.props.generation}`)
+    this.setState({ loading: false });
     this.setState({cells});
     console.log(this.state.cells);
   }
@@ -60,7 +83,7 @@ class PokeList extends Component {
     //console.log(this.props.generation);
     return (
       <section className="poke-list">
-        {this.state.cells}
+        {this.state.loading ? <LoadingComponent /> : this.state.cells}
       </section>
     )
   }

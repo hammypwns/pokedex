@@ -12,8 +12,8 @@
   }
 
   .sprite-image {
-    width: calc(30vw);
-    height: calc(30vw);
+    width: 30vw;
+    height: 30vw;
     margin: .5vw auto;
     background-color:rgba(135, 206, 250, 1);
     border: .75vw solid rgb(255, 239, 98);
@@ -82,5 +82,25 @@
 
     .data-info {
       font-size: 1.75vh;
+    }
+  }
+
+  @media (max-height: 700px) {
+    .data-wrapper {
+      height: 50vh;
+    }
+
+    .sprite-image {
+      width: 40vh;
+      height: 40vh;
+    }
+
+    .data-name {
+      font-size: 4vh;
+      font-weight: bold;
+    }
+
+    .data-info {
+      font-size: 3vh;
     }
   }

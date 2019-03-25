@@ -12,8 +12,8 @@ const DetailView = ({ pokemon }) => {
         <img src={sprite} className='sprite-image' alt="sprite" />
         <div className='data-wrapper'>
           <p className ='data-name'>Welcome to the React Pokédex!</p><br />
-          <p className ='data-id'>You can choose a generation by clicking a ball on the left. {id}</p> <br/>
-          <p className='data-type'>Click on a Pokémon to view more details! {type}</p>
+          <p className ='data-info'>You can choose a generation by clicking a ball on the left. {id}</p> <br/>
+          <p className='data-info'>Click on a Pokémon to view more details! {type}</p>
         </div>
       </section>
     )

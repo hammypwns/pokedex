@@ -22,3 +22,13 @@
     margin: 2.5vh 3vh 2.5vh 3vh;
   }
 }
+
+.pokeballGif {
+  height: 20vw;
+  width: 20vw;
+}
+
+.loading {
+  text-align: center;
+  font-size: 2vw;
+}

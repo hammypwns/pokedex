@@ -6,19 +6,20 @@ import './styles/PokeList.css';
 import pokeball from '../assets/pokeball.gif';
 
 let loadingName;
-const loadingNames = ["Loading...", "Gotta Load 'em All", "Becoming the Very Best...",
+const loadingNames = ["Gotta Load 'em All", "Becoming the Very Best...",
     "Connecting to PokéDatabase...", "Scanning Pokéballs...", "Consulting with Professor Oak...",
-    "Making Poffins...", "Teaching Pikachu to Surf...", "Fixing Misty's Bike...",
-    "Pulling Brock away from Nurse Joy...", "Ruining Team Rocket's Plans",
-    "Light-years isn't time... It measures distance!", "Challenging Elite Four...",
-    "Selling Nuggets...", "Stocking Up on Rare Candies", "Flying on Pidgey (But Not Charizard)"]
+    "Teaching Pikachu to Surf...", "Fixing Misty's Bike...", "Pulling Brock away from Nurse Joy...",
+    "Ruining Team Rocket's Plans","Light-years isn't time... It measures distance!", "Challenging Elite Four...",
+    "Selling Nuggets...", "Stocking Up on Rare Candies", "Flying on Pidgey (But Not Charizard)",
+    "Meddling with Space and Time", "Grinding for Good IVs","Releasing Best Pokémon",
+    "Collecting Pokémon from Daycare", "Defeating Youngster Joey", "Surfing Cinnabar Ledge..."]
 
 
 const LoadingComponent = () => {
   loadingName = loadingNames[Math.floor(Math.random()*loadingNames.length)];
   return (
     <section className='loading'>
-      <img src = {pokeball} className='pokeballGif' alt="Pokeball gif"></img> <br/>
+      <img src = {pokeball} className='pokeballGif' alt="Pokeball gif"></img><br/>
       {loadingName}
     </section>
   )

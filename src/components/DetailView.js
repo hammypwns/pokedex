@@ -3,7 +3,7 @@ import './styles/DetailView.css';
 import introgif from '../assets/intro.gif'
 
 const DetailView = ({ pokemon }) => {
-  let { id, name, sprite, type, /*moves,*/ region, height, height2, weight, abilities } = pokemon;
+  let { id, name, sprite, shiny, type, /*moves,*/ region, height, height2, weight, abilities } = pokemon;
 
   if (pokemon.id === undefined) {
     sprite = introgif;
@@ -22,13 +22,9 @@ const DetailView = ({ pokemon }) => {
   else {
     return (
       <section className="detail-view">
-
-        <img src={sprite} className='sprite-image' alt="sprite"/>
-
-        {/* <p className='btns'>
-          <button className='shiny-btn' onClick={() => this.handleSpriteChange(id)}>Default</button>
-          <button className='shiny-btn' onClick={() => this.handleSpriteChange(id)}>Shiny</button>
-        </p> */}
+          <img src={sprite} className='sprite-image' alt="sprite"
+            onMouseOver={e => (e.currentTarget.src = shiny)}
+            onMouseOut={e => (e.currentTarget.src = sprite)} />
 
         <div className='data-wrapper'>
           <p className ='data-name'>Name: {name}</p>

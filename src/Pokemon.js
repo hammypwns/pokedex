@@ -8,6 +8,9 @@ class Pokemon {
       //grabs default image
       this.sprite = data.sprites.front_default;
 
+      //grabs shiny image
+      this.shiny = data.sprites.front_shiny;
+
       //shows comma separated list of types
       this.type = data.types[0].type.name.charAt(0).toUpperCase() + data.types[0].type.name.slice(1);
       data.types.forEach(element => {
@@ -66,6 +69,18 @@ class Pokemon {
     //gets height
     this.height = parseInt(data.height*0.328084, 10);
     this.height2 = Math.round(((data.height*0.328084) % 1) * 12);
+    if (this.height2 >= 12) {
+      this.height2 = this.height2 - 12;
+      this.height = this.height + 1;
+    }
+
+    // //gets stats
+    // this.speed = data.stats[0].base_stat;
+    // this.spdef = data.stats[1].base_stat;
+    // this.spatk = data.stats[2].base_stat;
+    // this.def = data.stats[3].base_stat;
+    // this.atk = data.stats[4].base_stat;
+    // this.hp = data.stats[5].base_stat;
   }
 }
 

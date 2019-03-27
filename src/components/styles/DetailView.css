@@ -8,6 +8,11 @@
   src: url(../../assets/Pokemon\ GB.ttf);
 }
 
+@font-face {
+  font-family: pokemonUnownGB;
+  src: url(../../assets/Pokemon\ Unown\ GB.ttf);
+}
+
 .detail-view {
     width: 50%;
     height: 90vh;
@@ -54,6 +59,10 @@
     line-height: 2.25vh;
     margin: 1vh 0 0 0;
     font-family: pokemonGB;
+  }
+
+  .unown {
+    font-family: pokemonUnownGB;
   }
 
   @media (max-width: 700px) {

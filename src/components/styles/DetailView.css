@@ -112,3 +112,10 @@
       line-height: 3.25vh;
     }
   }
+
+  @media (max-height: 450px) {
+    .sprite-image {
+      width: 40vh;
+      height: 40vh;
+    }
+  }

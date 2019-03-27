@@ -13,6 +13,8 @@
   src: url(../../assets/Pokemon\ GB.ttf);
 }
 
+/* Fonts obtained from: https://www.fontspace.com/jackster-productions/pokemon-gb */
+
 .App {
   display: flex;
   align-items: center;
@@ -71,6 +73,8 @@ body {
   border-radius: 0px;
   border-width: 0px;
 }
+
+/* I found the below animation code at: https://codepen.io/theDeanH/pen/zBZXLN*/
 
 .generations > button > img:hover {
   -webkit-animation-name: wiggle;
@@ -170,13 +174,16 @@ body {
 
   .generations > button {
     margin: 2vh 0 2vh 0;
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .generations > button > img {
+    width: 5vh;
+    height: 5vh;
   }
 
   .generations > button > p {
     margin: 0 0 0 1vw;
-  }
-
-  .genHeader {
-
   }
 }

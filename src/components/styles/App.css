@@ -8,6 +8,11 @@
   src: url(../../assets/Pokemon\ Hollow.ttf);
 }
 
+@font-face {
+  font-family: pokemonGB;
+  src: url(../../assets/Pokemon\ GB.ttf);
+}
+
 .App {
   display: flex;
   align-items: center;
@@ -48,6 +53,7 @@ body {
   height: 94bh;
   width: 5vw;
   align-self: center;
+  align-items: center;
 }
 
 .generations > button {
@@ -66,6 +72,41 @@ body {
   border-width: 0px;
 }
 
+.generations > button > img:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 2000ms;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
 .generations > button > p {
   margin: 0 0 0 .5vh;
   padding: 0 0 0 0;
@@ -74,14 +115,13 @@ body {
 }
 
 .genHeader {
-  font-size: 2vh;
+  font-size: 1.25vw;
   color: rgba(193, 231, 255, 1);
   text-align: center;
   font-weight: bolder;
   margin: 0 0 0 2.5vh;
   padding: 0 0 0 0;
-  font-family: pokemon2;
-  letter-spacing: .5vh;
+  font-family: pokemonGB;
 }
 
 @media (max-width: 700px) {
@@ -103,8 +143,13 @@ body {
 
   .genHeader {
     margin-left: 3vh;
-    letter-spacing: .3vh;
+    font-size: 2.5vw;
   }
+
+  .generations > button > p {
+    margin: 0 0 0 1.75vw;
+  }
+
   /* .Header {
     padding-top: 1vh;
     line-height: 1vh;
@@ -113,7 +158,7 @@ body {
 
 }
 
-@media (max-height: 625px) and (min-width: 625px) {
+@media (max-height: 700px) and (min-width: 625px) {
   .Header {
     font-size: 2.5vh;
     height: 2vh;
@@ -121,5 +166,17 @@ body {
     margin-top: 1vh;
     line-height: 2vh;
     letter-spacing: .5vh;
+  }
+
+  .generations > button {
+    margin: 2vh 0 2vh 0;
+  }
+
+  .generations > button > p {
+    margin: 0 0 0 1vw;
+  }
+
+  .genHeader {
+
   }
 }

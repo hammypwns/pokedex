@@ -74,13 +74,13 @@ class Pokemon {
       this.height = this.height + 1;
     }
 
-    // //gets stats
-    // this.speed = data.stats[0].base_stat;
-    // this.spdef = data.stats[1].base_stat;
-    // this.spatk = data.stats[2].base_stat;
-    // this.def = data.stats[3].base_stat;
-    // this.atk = data.stats[4].base_stat;
-    // this.hp = data.stats[5].base_stat;
+    //gets stats
+    this.speed = data.stats[0].base_stat;
+    this.spdef = data.stats[1].base_stat;
+    this.spatk = data.stats[2].base_stat;
+    this.def = data.stats[3].base_stat;
+    this.atk = data.stats[4].base_stat;
+    this.hp = data.stats[5].base_stat;
   }
 }
 

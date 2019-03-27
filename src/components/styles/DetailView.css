@@ -1,3 +1,13 @@
+@font-face {
+  font-family: pokemon;
+  src: url(../../assets/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+  font-family: pokemonGB;
+  src: url(../../assets/Pokemon\ GB.ttf);
+}
+
 .detail-view {
     width: 50%;
     height: 90vh;
@@ -22,8 +32,8 @@
   }
 
   .data-wrapper {
-    width: 80%;
-    height: 30vh;
+    width: 90%;
+    height: 37vh;
     padding: 1vw;
     margin: 0 auto;
     background-color: rgba(193, 231, 255, 1);
@@ -33,23 +43,23 @@
   }
 
   .data-name {
-    font-size: 1.5em;
+    font-size: 2.25vh;
+    line-height: 3vh;
     font-weight: bold;
+    font-family: pokemonGB;
   }
 
   .data-info {
-    font-size: 1em;
+    font-size: 1.75vh;
+    line-height: 2.25vh;
     margin: 1vh 0 0 0;
+    font-family: pokemonGB;
   }
 
   @media (max-width: 700px) {
-    .detail-view {
-      width: 40%;
-      height: 90vh;
-    }
 
     .data-wrapper {
-      width: 80%;
+      width: 90%;
       height: 50vh;
       padding: 1vw;
       margin: 0 auto;
@@ -61,16 +71,18 @@
     }
 
     .data-name {
-      font-size: 2vh;
+      font-size: 1.5vh;
+      line-height: 1.6vh;
       font-weight: bold;
     }
 
     .data-info {
-      font-size: 1.75vh;
+      font-size: 1.3vh;
+      line-height: 1.4vh;
     }
   }
 
-  @media (max-height: 700px)  and (min-width: 625px) {
+  @media (max-height: 700px)  and (min-width: 850px) {
     .data-wrapper {
       height: 50vh;
     }
@@ -81,11 +93,13 @@
     }
 
     .data-name {
-      font-size: 4vh;
+      font-size: 3.5vh;
+      line-height: 3.75vh;
       font-weight: bold;
     }
 
     .data-info {
       font-size: 3vh;
+      line-height: 3.25vh;
     }
   }

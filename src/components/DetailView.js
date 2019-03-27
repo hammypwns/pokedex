@@ -3,14 +3,14 @@ import './styles/DetailView.css';
 import introgif from '../assets/intro.gif'
 
 const DetailView = ({ pokemon }) => {
-  let { id, name, sprite, shiny, type, /*moves,*/ region, height, height2, weight, abilities } = pokemon;
+  let { id, name, sprite, shiny, type, region, height, height2, weight, abilities } = pokemon;
 
   if (pokemon.id === undefined) {
     sprite = introgif;
     return (
       <section className="detail-view">
         <img src={sprite} className='sprite-image' alt="sprite" />
-        <div className='data-wrapper'>
+        <div className='data-wrapper' style={{textAlign: "center"}}>
           <p className ='data-name'>Welcome to the React Pokédex!</p><br />
           <p className ='data-info'>You can choose a generation by clicking a ball on the left. {id}</p> <br/>
           <p className='data-info'>Click on a Pokémon to view more details! {type}</p>
@@ -31,7 +31,6 @@ const DetailView = ({ pokemon }) => {
           <p className ='data-info'>Pokédex #: {id}</p>
           <p className='data-info'>Region: {region}</p>
           <p className='data-info'>Type: {type}</p>
-          {/* <p className='data-info'>Default Move: {moves}</p><br /> */}
           <p className='data-info'>Abilities: {abilities}</p>
           <p className='data-info'>Height: {height}' {height2}"</p>
           <p className='data-info'>Weight: {weight}lbs</p>

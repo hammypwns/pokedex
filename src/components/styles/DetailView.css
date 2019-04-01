@@ -1,18 +1,3 @@
-@font-face {
-  font-family: pokemon;
-  src: url(../../assets/Pokemon\ Solid.ttf);
-}
-
-@font-face {
-  font-family: pokemonGB;
-  src: url(../../assets/Pokemon\ GB.ttf);
-}
-
-@font-face {
-  font-family: pokemonUnownGB;
-  src: url(../../assets/Pokemon\ Unown\ GB.ttf);
-}
-
 .detail-view {
     width: 50%;
     height: 90vh;

@@ -13,6 +13,11 @@
   src: url(../../assets/Pokemon\ GB.ttf);
 }
 
+@font-face {
+  font-family: pokemonUnownGB;
+  src: url(../../assets/Pokemon\ Unown\ GB.ttf);
+}
+
 /* Fonts obtained from: https://www.fontspace.com/jackster-productions/pokemon-gb */
 
 .App {
@@ -120,7 +125,8 @@ body {
 
 .genHeader {
   font-size: 1.25vw;
-  color: rgba(193, 231, 255, 1);
+  color: black;
+  /* color: rgba(193, 231, 255, 1); */
   text-align: center;
   font-weight: bolder;
   margin: 0 0 0 2.5vh;

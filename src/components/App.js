@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <>
       <div className = "Header">
-        React Pokédex
+        <a href = "https://www.pokemon.com/us/pokedex/" target="_blank" rel="noopener noreferrer">React Pokédex</a>
       </div>
 
       <div className="App">

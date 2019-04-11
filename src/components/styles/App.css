@@ -37,6 +37,11 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+a {
+  color: red;
+  text-decoration: none;
+}
+
 .Header {
   font-size: 2vh;
   color: black;
